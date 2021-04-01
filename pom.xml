@@ -26,6 +26,12 @@
   <properties>
     <java.version>11</java.version>
     <folio-spring-base-version>1.0.4</folio-spring-base-version>
+    <edge-api-utils-version>1.0.0-SNAPSHOT</edge-api-utils-version>
+    <wiremock-version>2.27.2</wiremock-version>
+    <!--Exclude this packages from sonar, as it contains only interfaces and entities-->
+    <sonar.exclusions>src/main/java/org/folio/edgecommonspring/domain/**,
+      src/main/java/org/folio/edgecommonspring/client/AuthnClient.java
+    </sonar.exclusions>
   </properties>
 
   <dependencies>
@@ -33,6 +39,28 @@
       <groupId>org.folio</groupId>
       <artifactId>folio-spring-base</artifactId>
       <version>${folio-spring-base-version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.liquibase</groupId>
+          <artifactId>liquibase-core</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>org.folio</groupId>
+      <artifactId>edge-api-utils</artifactId>
+      <version>${edge-api-utils-version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.logging.log4j</groupId>
+          <artifactId>log4j-to-slf4j</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-classic</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <dependency>
