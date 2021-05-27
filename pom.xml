@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.4.3</version>
-    <relativePath/>
+    <relativePath />
   </parent>
 
   <groupId>org.folio</groupId>
   <artifactId>edge-common-spring</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.1.0-SNAPSHOT</version>
   <name>edge-common-spring</name>
   <description>A shared library/framework for edge APIs for spring way modules</description>
   <packaging>jar</packaging>
@@ -26,7 +25,7 @@
   <properties>
     <java.version>11</java.version>
     <folio-spring-base-version>1.0.4</folio-spring-base-version>
-    <edge-api-utils-version>1.0.0-SNAPSHOT</edge-api-utils-version>
+    <edge-api-utils-version>1.0.0</edge-api-utils-version>
     <wiremock-version>2.27.2</wiremock-version>
     <!--Exclude this packages from sonar, as it contains only interfaces and entities-->
     <sonar.exclusions>src/main/java/org/folio/edgecommonspring/domain/**,
