@@ -32,7 +32,7 @@ public class EdgeSecurityFilter extends GenericFilterBean {
 
   private final SecurityManagerService securityManagerService;
   private final ApiKeyHelperImpl apiKeyHelperImpl;
-  @Value("${header.edge.validation.exclude:/admin/health,/admin/info,/_/tenant}")
+  @Value("${header.edge.validation.exclude:/admin/health,/admin/info,/swagger-resources,/v2/api-docs,/swagger-ui,/_/tenant}")
   private String[] excludeBasePaths;
 
   @Override
@@ -40,7 +40,7 @@ public class EdgeSecurityFilter extends GenericFilterBean {
     throws IOException, ServletException {
 
     final HttpServletRequest httpRequest = (HttpServletRequest) request;
-    RequestWithHeaders wrapper = new RequestWithHeaders(httpRequest);
+    var wrapper = new RequestWithHeaders(httpRequest);
 
     if (isAuthorizationNeeded(wrapper)) {
       log.debug("Trying to get token while query: {}", ((HttpServletRequest) request).getRequestURI());
