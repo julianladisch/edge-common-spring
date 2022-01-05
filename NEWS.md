@@ -1,5 +1,8 @@
 ## 1.2.0 Unreleased
 
+## 05/01/2022 v1.1.1 - Released
+ Upgrade log4j version
+
 ## 29/09/2021 v1.1.0 - Released
 The primary focus of this release was to update edge-api-util version and handle api key parameters
 
