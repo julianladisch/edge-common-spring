@@ -1,4 +1,5 @@
-## 1.2.0 Unreleased
+## 22/02/2022 v1.2.0 - Released
+* [EDGCMNSPR-9](https://issues.folio.org/browse/EDGCMNSPR-9) Upgrade to the folio spring base v.3.0.1
 
 ## 05/01/2022 v1.1.1 - Released
  Upgrade log4j version
