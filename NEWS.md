@@ -1,3 +1,6 @@
+## 08/04/2022 v2.0.0 - Released
+* [EDGCMNSPR-14](https://issues.folio.org/browse/EDGCMNSPR-14) Upgrade folio-spring-base to 4.0.0
+
 ## 22/02/2022 v1.2.0 - Released
 * [EDGCMNSPR-9](https://issues.folio.org/browse/EDGCMNSPR-9) Upgrade to the folio spring base v.3.0.1
 
