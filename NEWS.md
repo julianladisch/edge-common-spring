@@ -1,3 +1,12 @@
+## 05/07/2021 v2.0.1 - Released
+This release includes minor technical changes and dependencies updating.
+
+### Stories
+* [EDGCMNSPR-21](https://issues.folio.org/browse/EDGCMNSPR-21) - edge-api-utils dependency updating to 1.1.2
+* [EDGCMNSPR-18](https://issues.folio.org/browse/EDGCMNSPR-18) - Publish javadoc and sources to maven repository
+* [EDGCMNSPR-16](https://issues.folio.org/browse/EDGCMNSPR-16) - edge-common-spring Spring upgrade Morning Glory 2022 R2
+* [EDGCMNSPR-11](https://issues.folio.org/browse/EDGCMNSPR-11) - edge-common-spring: folio-spring-base update
+
 ## 08/04/2022 v2.0.0 - Released
 * [EDGCMNSPR-14](https://issues.folio.org/browse/EDGCMNSPR-14) Upgrade folio-spring-base to 4.0.0
 
