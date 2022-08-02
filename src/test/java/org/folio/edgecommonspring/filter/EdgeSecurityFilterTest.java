@@ -11,6 +11,7 @@ import static org.mockito.Mockito.verify;
 
 import java.io.IOException;
 import java.util.Collections;
+import java.util.Set;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
@@ -70,7 +71,7 @@ class EdgeSecurityFilterTest {
     ReflectionTestUtils
       .setField(edgeSecurityFilter, "excludeBasePaths", ArrayUtils.EMPTY_STRING_ARRAY);
     when((request).getServletPath()).thenReturn("/tests");
-    when((request).getHeaderNames()).thenReturn(Collections.emptyEnumeration());
+    when((request).getHeaderNames()).thenReturn(Collections.enumeration(Set.of("Accept", "Accept-Encoding")));
     when((request).getRequestURI()).thenReturn("/tests");
     ConnectionSystemParameters connectionSystemParameters = new ConnectionSystemParameters()
       .withTenantId(TENANT)
@@ -85,6 +86,7 @@ class EdgeSecurityFilterTest {
     // then
     Assertions.assertEquals(TENANT, requestCaptor.getValue().getHeader("x-okapi-tenant"));
     Assertions.assertEquals(MOCK_TOKEN, requestCaptor.getValue().getHeader("x-okapi-token"));
+    Assertions.assertEquals(2, Collections.list(requestCaptor.getValue().getHeaderNames()).size());
     verify(filterChain).doFilter(requestCaptor.getValue(), response);
   }
 
