@@ -15,9 +15,6 @@ public final class RequestWithHeaders extends HttpServletRequestWrapper {
   public RequestWithHeaders(HttpServletRequest request) {
     super(request);
     headers = new HashMap<>();
-    request.getHeaderNames()
-      .asIterator()
-      .forEachRemaining(header -> headers.put(header, request.getHeader(header)));
   }
 
   public void putHeader(String name, String value) {
