@@ -1,4 +1,10 @@
-## 05/07/2021 v2.0.1 - Released
+## 04/08/2022 v2.0.2 - Released
+This release includes update of headers processing.
+
+### Stories
+* [EDGCMNSPR-22](https://issues.folio.org/browse/EDGCMNSPR-22) - Updating of headers processing
+
+## 05/07/2022 v2.0.1 - Released
 This release includes minor technical changes and dependencies updating.
 
 ### Stories
