@@ -1,3 +1,9 @@
+## 14/10/2022 v2.1.0 - Released
+This release includes version upgrade of spring and folio-spring-base library.
+
+### Tasks
+* [EDGCMNSPR-26](https://issues.folio.org/browse/EDGCMNSPR-26) - edge-common-spring: spring upgrade
+
 ## 04/08/2022 v2.0.2 - Released
 This release includes update of headers processing.
 
