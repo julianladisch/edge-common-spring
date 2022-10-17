@@ -1,4 +1,4 @@
-## 14/10/2022 v2.1.0 - Released
+## 17/10/2022 v2.1.0 - Released
 This release includes version upgrade of spring and folio-spring-base library.
 
 ### Tasks
