@@ -3,11 +3,3 @@ feign:
     config:
       default:
         loggerLevel: full
-management:
-  endpoints:
-    web:
-      exposure:
-        include: loggers
-  endpoint:
-    loggers:
-      enabled: true
