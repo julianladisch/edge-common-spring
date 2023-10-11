@@ -3,9 +3,11 @@ This release includes dependencies upgrade, implementation of refresh token rota
 
 ### Tasks
 * [EDGCMNSPR-40](https://issues.folio.org/browse/EDGCMNSPR-40) - Upgrade Folio spring base and Folio spring system user dependency version
-* [EDGCMNSPR-39](https://issues.folio.org/browse/EDGCMNSPR-39) - Implement Expired token from cache of edge-common-spring
 * [EDGCMNSPR-38](https://issues.folio.org/browse/EDGCMNSPR-38) - Upgrade dependencies for Poppy (Spring Boot 3.1)
 * [EDGCMNSPR-35](https://issues.folio.org/browse/EDGCMNSPR-35) - Migrate to folio-spring-support v7.0.0
+
+### Stories
+* [EDGCMNSPR-39](https://issues.folio.org/browse/EDGCMNSPR-39) - Implement Expired token from cache of edge-common-spring
 * [EDGCMNSPR-29](https://issues.folio.org/browse/EDGCMNSPR-29) - Implement refresh token rotation
 
 ### Bug Fixes
