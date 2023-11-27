@@ -24,7 +24,7 @@
 
   <properties>
     <java.version>17</java.version>
-    <folio-spring-version>7.2.2</folio-spring-version>
+    <folio-spring-version>7.2.2</folio-spring-version>  <!-- also update spring-boot-starter-parent version above -->
     <versions-maven-plugin-version>2.16.0</versions-maven-plugin-version>
     <maven-enforcer-plugin-version>3.4.0</maven-enforcer-plugin-version>
     <build-helper-maven-plugin-version>3.4.0</build-helper-maven-plugin-version>
