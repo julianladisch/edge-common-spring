@@ -1,3 +1,6 @@
+## 29/11/2023 v2.3.1 - Released
+This release includes upgrade of folio-spring-base dependency.
+
 ## 11/10/2023 v2.3.0 - Released
 This release includes dependencies upgrade, implementation of refresh token rotation.
 
