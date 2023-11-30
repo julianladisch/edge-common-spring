@@ -1,3 +1,6 @@
+## 30/11/2023 v2.3.2 - Released
+This release includes upgrade of folio-spring-base dependency.
+
 ## 29/11/2023 v2.3.1 - Released
 This release includes upgrade of folio-spring-base dependency.
 
