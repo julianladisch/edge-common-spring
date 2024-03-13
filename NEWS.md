@@ -1,3 +1,9 @@
+## 03/13/2024 v2.4.0 - Released
+This released upgrades dependencies for Quesnelia.
+
+### Tasks
+* [EDGCMNSPR-47](https://folio-org.atlassian.net/browse/EDGCMNSPR-47) - Spring Boot 3.2, folio-spring 8.1, edge-api-utils 1.4
+
 ## 11/10/2023 v2.3.0 - Released
 This release includes dependencies upgrade, implementation of refresh token rotation.
 
