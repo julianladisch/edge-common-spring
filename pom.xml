@@ -32,7 +32,7 @@
     <maven-source-plugin-version>3.3.0</maven-source-plugin-version>
     <maven-javadoc-plugin-version>3.6.3</maven-javadoc-plugin-version>
     <maven-deploy-plugin-version>3.1.1</maven-deploy-plugin-version>
-    <edge-api-utils-version>1.4.0</edge-api-utils-version>
+    <edge-api-utils-version>1.4.1</edge-api-utils-version>
     <!--Exclude this packages from sonar, as it contains only interfaces and entities-->
     <sonar.exclusions>
       src/main/java/org/folio/edgecommonspring/domain/**,
@@ -50,12 +50,24 @@
       <groupId>org.folio</groupId>
       <artifactId>folio-spring-system-user</artifactId>
       <version>${folio-spring-version}</version>
+      <exclusions>
+        <exclusion>
+          <!-- circular dependency: https://folio-org.atlassian.net/browse/FOLSPRINGS-146 -->
+          <groupId>org.folio</groupId>
+          <artifactId>edge-api-utils</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.folio</groupId>
       <artifactId>edge-api-utils</artifactId>
       <version>${edge-api-utils-version}</version>
       <exclusions>
+        <exclusion>
+          <!-- circular dependency: https://folio-org.atlassian.net/browse/FOLSPRINGS-146 -->
+          <groupId>org.folio</groupId>
+          <artifactId>folio-spring-system-user</artifactId>
+        </exclusion>
         <exclusion>
           <groupId>org.apache.logging.log4j</groupId>
           <artifactId>log4j-to-slf4j</artifactId>
