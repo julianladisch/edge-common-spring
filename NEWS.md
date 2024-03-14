@@ -1,5 +1,11 @@
+## 03/14/2024 v2.4.1 - Released
+This release fixes a bug.
+
+### Bug Fixes
+* [EDGCMNSPR-49](https://folio-org.atlassian.net/browse/EDGCMNSPR-49) - edge-api-utils 1.4.1 fixing vault and circular dependency issues
+
 ## 03/13/2024 v2.4.0 - Released
-This released upgrades dependencies for Quesnelia.
+This release upgrades dependencies for Quesnelia.
 
 ### Tasks
 * [EDGCMNSPR-47](https://folio-org.atlassian.net/browse/EDGCMNSPR-47) - Spring Boot 3.2, folio-spring 8.1, edge-api-utils 1.4
