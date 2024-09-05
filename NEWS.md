@@ -1,3 +1,6 @@
+## 09/05/2024 v2.4.6 - Released
+This release contains dependencies updating.
+
 ## 07/01/2024 v2.4.5 - Released
 This release contains dependencies updating.
 
